@@ -1,0 +1,5 @@
+<p>
+  insert a word
+</p>
+<input type="text" [(ngModel)]="startsWith" (input)="getWordsFromService()">
+<ul><li *ngFor="let word of displayWords">{{word}}</li></ul>
